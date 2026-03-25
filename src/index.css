@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #010103;
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
   font-family: 'General Sans', sans-serif;
 }
 
@@ -39,7 +39,7 @@ body {
   }
 
   .text-gray_gradient {
-    @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#2563eb] from-30% via-[#7c3aed] via-60% to-[#db2777] to-100% bg-clip-text text-transparent;
   }
 
   /* button component */
@@ -62,7 +62,7 @@ body {
 
   /* about section */
   .grid-container {
-    @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full border border-white/40 bg-white/30 backdrop-blur-lg rounded-lg sm:p-7 p-4 flex flex-col gap-5 shadow-xl;
   }
 
   .grid-headtext {
@@ -70,7 +70,7 @@ body {
   }
 
   .grid-subtext {
-    @apply text-[#afb0b6] text-base font-generalsans;
+    @apply text-slate-700 text-base font-generalsans;
   }
 
   .copy-container {
@@ -92,7 +92,7 @@ body {
   }
 
   .client-review {
-    @apply rounded-lg md:p-10 p-5 col-span-1 bg-black-300 bg-opacity-50;
+    @apply rounded-lg md:p-10 p-5 col-span-1 bg-white/40 backdrop-blur-md shadow-lg border border-white/50;
   }
 
   .client-content {
@@ -105,11 +105,11 @@ body {
   }
 
   .work-canvas {
-    @apply col-span-1 rounded-lg bg-black-200 border border-black-300;
+    @apply col-span-1 rounded-lg bg-white/30 backdrop-blur-md border border-white/40 shadow-lg;
   }
 
   .work-content {
-    @apply col-span-2 rounded-lg bg-black-200 border border-black-300;
+    @apply col-span-2 rounded-lg bg-white/30 backdrop-blur-md border border-white/40 shadow-lg;
   }
 
   .work-content_container {
@@ -121,7 +121,7 @@ body {
   }
 
   .work-content_bar {
-    @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-500 group-last:hidden;
+    @apply flex-1 w-0.5 mt-4 h-full bg-slate-300 group-hover:bg-slate-400 group-last:hidden;
   }
 
   /* contact section */
@@ -130,7 +130,7 @@ body {
   }
 
   .field-label {
-    @apply text-lg text-white-600;
+    @apply text-lg text-slate-300;
   }
 
   .field-input {
